@@ -1,0 +1,116 @@
+.sortCompany {
+    position: relative;
+    margin: 0;
+    min-height: 370px;
+}
+
+.companyPartnersHolder {
+    display: none;
+}
+
+.companyPartners {
+    width: 100%;
+    min-height: 370px;
+    display: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.companiesMainCont {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.oneCompany {
+    display: inline-block;
+    position: relative;
+    width: 10%;
+    height: 250px;
+    margin: 0 20px;
+    min-width: 100px;
+}
+
+.percentHolder, .weakLines, .mainName {
+    border: 1px solid #000;
+    border-left: none;
+    position: absolute;
+}
+
+.mainName {
+    font-size: 1.5em;
+    padding: 10px;
+    bottom: 50px;
+    left: -40px;
+    min-width: 160px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mainName,
+.weakLines {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.percentHolder {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 2%;
+    left: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #000;
+}
+
+.weakLines {
+    top: 28%;
+    left: 22%;
+    width: 41px;
+    height: 10px;
+    border-right: none;
+}
+
+.textHolder > div {
+    float: right;
+    white-space: nowrap;
+    width: 40%;
+    text-align: right;
+}
+
+h5,h3 {
+    display: inline-block;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 5%;
+    border-bottom: 1px solid #000;
+}
+
+.nameSort,
+.percentageSort {
+    font-weight: 600;
+    margin-left:3%;
+}
+
+.closePartnersDiv {
+    margin-left: 10%;
+}

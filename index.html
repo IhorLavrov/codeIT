@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/result.min.css">
+    <script src="js/unConcatJs/jquery-3.2.1.min.js"></script>
+    <script src="js/result.min.js"></script>
+</head>
+<body>
+<form id="regForm" action="//codeit.pro/frontTestTask/user/registration" >
+    <h3>Sign Up</h3>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="First Name" required>
+    </div>
+    <div>
+        <label for="surname">Surname:</label>
+        <input type="text" name="secondname" id="surname" placeholder="Second Name" required>
+    </div>
+    <div>
+        <label for="eMail">E-mail</label>
+        <input type="email" name="email" id="eMail" placeholder="Email" required>
+    </div>
+    <div>
+        <select name="gender" id="male" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="pass" id="password" placeholder="Password" required>
+    </div>
+    <div>
+        <input type="checkbox" id="agree" required>
+        <label for="agree">Conditions and Agreement</label>
+    </div>
+    <input type="submit" value="Send" id="send" onclick="sendGet(); return false">
+</form>
+</body>
+</html>

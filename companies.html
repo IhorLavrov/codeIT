@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+    <link rel="stylesheet" href="css/result.min.css">
+    <script src="js/unConcatJs/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--здесь не удалось убрать протокол из адреса, т.к. библиотека гугла требует явного указания -->
+    <script src="js/result.min.js" defer></script>
+</head>
+<body>
+<section>
+    <article>
+        <div class="articlePadding">
+            <div class="articleWrapper">
+                <div class="loader">
+                    <div class="svg">
+                    </div>
+                </div>
+                <div class="textHolder">
+                    <h4>Total Companies</h4>
+                </div>
+                <div class="container">
+                    <div class="divCircle">
+                        <span id="totalCompanies"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="articlePadding">
+            <div class="articleWrapper">
+                <div class="loader">
+                    <div class="svg">
+                    </div>
+                </div>
+                <div class="textHolder">
+                    <h4>List of Companies</h4>
+                </div>
+                <div class="container2">
+                    <div class="holderCompanies">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</section>
+<section class="companyPartnersHolder">
+</section>
+<section class="circleData">
+    <article>
+        <div class="articlePadding">
+            <div class="articleWrapper">
+                <div class="loader">
+                    <div class="svg">
+                    </div>
+                </div>
+                <div class="textHolder">
+                    <h4>Companies by Location</h4>
+                    <div class="closeHolder">
+                        <a href="#" class="closeHref"><img src="img/closeMenu.png" width="15" height="15"
+                                                           alt="closeMenu"></a>
+                    </div>
+                </div>
+                <div class="containerCountries">
+                    <div class="infoAboutCountry">
+                        <h4 class="countryName"></h4>
+                        <div class="holderCountriesCompany">
+                        </div>
+                    </div>
+                    <div class="pieWrap">
+                        <div id="piechart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="articlePadding">
+            <div class="articleWrapper">
+                <div class="loader">
+                    <div class="svg">
+                    </div>
+                </div>
+
+                <div class="textHolder">
+                    <h4>News</h4>
+                </div>
+                <div class="news">
+                    <div class="newsHolder">
+                        <div class="newsPadding"></div>
+                    </div>
+                    <div class="controls">
+                        <input type="radio" id="prevNews" name="controlButton">
+                        <label class="prevLabel" for="prevNews"></label>
+                        <input type="radio" id="currentNews" name="controlButton">
+                        <label class="currentLabel" for="currentNews"></label>
+                        <input type="radio" id="nextNews" name="controlButton">
+                        <label class="nextLabel" for="nextNews"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+</body>
+</html>
